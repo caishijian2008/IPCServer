@@ -16,7 +16,10 @@
             </intent-filter>
         </activity>
         <service android:name=".IPCService">
-
+            <intent-filter>
+                <action android:name="android.intent.action.IPCService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
         </service>
     </application>
 
